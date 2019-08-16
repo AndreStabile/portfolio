@@ -4,6 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Long+Cang|Special+Elite&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7020,8 +7021,51 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+@media (max-width: 1920px) {
+  .container {
+    width: 1366px; } }
+
+@media (max-width: 1440px) {
+  .container {
+    width: 1140px; } }
+
+@media (max-width: 1200px) {
+  .container {
+    width: 976px; } }
+
+@media (max-width: 1000px) {
+  .container {
+    width: 768px; } }
+
+@media (max-width: 768px) {
+  .container {
+    width: 576px; } }
+
+body {
+  background: radial-gradient(ellipse at center, #f8f5e1 0%, #e1d4ac 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  font-family: 'Special Elite', cursive; }
+
+.subtitle_projects {
+  font-family: 'Long Cang', cursive;
+  color: #FF0000;
+  opacity: 87%; }
+
 .container {
-  max-width: 960px; }
+  max-width: 1920px; }
+
+.h0 {
+  font-size: 3.5rem; }
+
+.card.legal_warning {
+  border: 2px solid #000;
+  background: rgba(0, 0, 0, 0); }
+
+p.legal_warning {
+  background: #f6f2dd;
+  font-size: 1.5rem;
+  margin-top: -3.25rem;
+  width: fit-content; }
 
 .border-top {
   border-top: 1px solid #e5e5e5; }

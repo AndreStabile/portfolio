@@ -1,7 +1,36 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Long+Cang|Special+Elite&display=swap');
+@import "media.scss";
+
+body {
+  background: radial-gradient(ellipse at center,  #f8f5e1 0%,#e1d4ac 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  font-family: 'Special Elite', cursive;
+}
+
+.subtitle_projects {
+  font-family: 'Long Cang', cursive;
+  color: #FF0000;
+  opacity: 87%;
+}
 
 .container {
-  max-width: 960px;
+  max-width: 1920px;
+}
+
+.h0 {
+  font-size: 3.5rem;
+}
+
+.card.legal_warning {
+  border: 2px solid #000;
+  background: rgba(0, 0, 0, 0);
+}
+
+p.legal_warning {
+  background: #f6f2dd;
+  font-size: 1.5rem;
+  margin-top: -3.25rem;
+  width: fit-content;
 }
 
 .border-top { border-top: 1px solid #e5e5e5; }
