@@ -1,0 +1,1 @@
+Para rodar SCSS aplicar: npm run scss
