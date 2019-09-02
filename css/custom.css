@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css?family=Long+Cang|Special+Elite&display=swap");
+@import url(../node_modules/@fortawesome/fontawesome-free/css/all.css);
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7044,12 +7045,32 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   background: radial-gradient(ellipse at center, #f8f5e1 0%, #e1d4ac 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  color: rgba(0, 0, 0, 0.87);
   font-family: 'Special Elite', cursive; }
+
+a {
+  color: #000;
+  text-decoration: underline; }
+  a :hover {
+    color: #000;
+    text-decoration: #FF0000 underline; }
+  a.subtitle_projects {
+    text-decoration: none; }
+    a.subtitle_projects :hover {
+      text-decoration: #FF0000 underline; }
+
+.link-home {
+  text-decoration: none; }
+  .link-home :hover {
+    text-decoration: underline; }
+
+img.fullProject {
+  width: 90%; }
 
 .subtitle_projects {
   font-family: 'Long Cang', cursive;
   color: #FF0000;
-  opacity: 87%; }
+  margin-top: 1.5rem; }
 
 .container {
   max-width: 1920px; }
@@ -7061,23 +7082,24 @@ body {
   border: 2px solid #000;
   background: rgba(0, 0, 0, 0); }
 
+.card.image {
+  padding-bottom: 1.5rem !important; }
+
 p.legal_warning {
   background: #f6f2dd;
   font-size: 1.5rem;
   margin-top: -3.25rem;
   width: fit-content; }
 
-.border-top {
-  border-top: 1px solid #e5e5e5; }
+.profile_pic {
+  width: 100%; }
 
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5; }
+.redacted {
+  background-color: #000;
+  color: #FFF;
+  font-size: 1.5rem;
+  display: inline-block; }
 
-.border-top-gray {
-  border-top-color: #adb5bd; }
-
-.box-shadow {
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); }
-
-.lh-condensed {
-  line-height: 1.25; }
+i.redacted {
+  background-color: #000;
+  color: #FFF; }

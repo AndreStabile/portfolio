@@ -1,16 +1,48 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Long+Cang|Special+Elite&display=swap');
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 @import "media.scss";
 
 body {
   background: radial-gradient(ellipse at center,  #f8f5e1 0%,#e1d4ac 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  color: rgba(0, 0, 0, .87);
   font-family: 'Special Elite', cursive;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+
+  :hover {
+    color: #000;
+    text-decoration: #FF0000 underline;
+  }
+
+  &.subtitle_projects {
+    text-decoration: none;
+
+    :hover {
+      text-decoration: #FF0000 underline;
+    }
+  }
+}
+
+.link-home {
+  text-decoration: none;
+
+  :hover {
+    text-decoration: underline;
+  }
+}
+
+img.fullProject {
+  width: 90%;
 }
 
 .subtitle_projects {
   font-family: 'Long Cang', cursive;
   color: #FF0000;
-  opacity: 87%;
+  margin-top: 1.5rem;
 }
 
 .container {
@@ -26,6 +58,10 @@ body {
   background: rgba(0, 0, 0, 0);
 }
 
+.card.image {
+  padding-bottom: 1.5rem !important;
+}
+
 p.legal_warning {
   background: #f6f2dd;
   font-size: 1.5rem;
@@ -33,10 +69,18 @@ p.legal_warning {
   width: fit-content;
 }
 
-.border-top { border-top: 1px solid #e5e5e5; }
-.border-bottom { border-bottom: 1px solid #e5e5e5; }
-.border-top-gray { border-top-color: #adb5bd; }
+.profile_pic {
+  width: 100%;
+}
 
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.redacted {
+  background-color: #000;
+  color: #FFF;
+  font-size: 1.5rem;
+  display: inline-block;
+}
 
-.lh-condensed { line-height: 1.25; }
+i.redacted {
+  background-color: #000;
+  color: #FFF;
+}
