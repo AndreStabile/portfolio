@@ -1,3 +1,18 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 769px,
+  md: 993px,
+  lg: 1367px,
+  xl: 1921px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 768px,
+  lg: 992px,
+  xl: 1080px,
+);
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Long+Cang|Special+Elite&display=swap');
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
@@ -74,13 +89,26 @@ p.legal_warning {
 }
 
 .redacted {
-  background-color: #000;
-  color: #FFF;
   font-size: 1.5rem;
-  display: inline-block;
+
+  & span {
+    position: relative;
+    white-space: pre;
+    &:after {
+      background: black;
+      border-radius: 0.1em;
+      box-shadow: 0 0 1px rgba(0,0,0,0.35);
+      content: " ";
+      width: 100%;
+      height: 1.2em;
+      left: 0;
+      position: absolute;
+      transform: skewY(-5deg) rotate(5deg);
+    }
+  }
 }
 
 i.redacted {
   background-color: #000;
-  color: #FFF;
+  font-size: 5rem;
 }
