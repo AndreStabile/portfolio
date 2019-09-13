@@ -7070,6 +7070,10 @@ a {
   .link-home :hover {
     text-decoration: underline; }
 
+img.standard {
+  max-width: 50%;
+  max-height: 90vh; }
+
 img.fullProject {
   width: 90%; }
 
