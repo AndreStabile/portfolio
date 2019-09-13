@@ -16,10 +16,6 @@ function prepareDate () {
   
   today = dd+'/'+mm+'/'+yyyy;
 
-  var trocaData = document.getElementsByClassName('trocaData');
-  console.log(trocaData);
-  trocaData.innerHTML = 'today';  
-
-  console.log(trocaData);
+  document.getElementById("trocaData").innerHTML = today;
 }
 
