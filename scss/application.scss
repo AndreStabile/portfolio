@@ -2,7 +2,12 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Long+Cang|Special+Elite&display=swap');
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@import "cards.scss";
+@import "images.scss";
 @import "media.scss";
+@import "redacted.scss";
+@import "typography.scss";
+@import "underline.scss";
 
 body {
   background: radial-gradient(ellipse at center,  #f8f5e1 0%,#e1d4ac 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -11,136 +16,6 @@ body {
   max-width: 100%;
 }
 
-a {
-  color: #000;
-
-  &.link {
-    text-decoration: underline;
-
-    :hover {
-      text-decoration: #F00 underline;
-    }
-  }
-
-  &:hover {
-    color: #000;
-    text-decoration: none;
-  }
-
-  &.subtitle_projects,
-  .social-links {
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: #FF0000 underline;
-    }
-  }
-}
-
-.link-home {
-  text-decoration: none;
-
-  :hover {
-    text-decoration: underline;
-  }
-}
-
-img {
-  &.standard {
-    max-width: 50%;
-    max-height: 90vh;
-  }
-
-  &.fullProject {
-    width: 30vw;
-  }
-}
-
-.subtitle_projects {
-  font-family: 'Long Cang', cursive;
-  color: #FF0000;
-  margin-top: 1.5rem;
-}
-
 .container {
   max-width: 1920px;
-}
-
-.h0 {
-  font-size: 3.5rem;
-}
-
-.card.legal_warning {
-  border: 2px solid #000;
-  background: rgba(0, 0, 0, 0);
-}
-
-.card.image {
-  padding-bottom: 1.5rem !important;
-}
-
-p.legal_warning {
-  background: #f6f2dd;
-  font-size: 1.5rem;
-  margin-top: -3.25rem;
-  width: fit-content;
-}
-
-.profile_pic {
-  width: 100%;
-}
-
-.redacted {
-  font-size: 1.5rem;
-
-  & span {
-    position: relative;
-    white-space: pre;
-    &:after {
-      background: black;
-      border-radius: 0.1em;
-      box-shadow: 0 0 1px rgba(0,0,0,0.35);
-      content: " ";
-      width: 100%;
-      height: 1.2em;
-      left: 0;
-      position: absolute;
-      transform: skewY(-5deg) rotate(5deg);
-    }
-  }
-}
-
-i.redacted {
-  background-color: #000;
-  font-size: 5rem;
-}
-
-.underline {
-  display: inline;
-  position: relative;
-  overflow: hidden;
-
-  :hover {
-    text-decoration: none !important;
-  }
-}
-.underline:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  right: 0;
-  width: 0;
-  bottom: -0.25rem;
-  background: #ccff00;
-  height: 2.25rem;
-  transition-property: width;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
-}
-.underline:hover:after,
-.underline:focus:after,
-.underline:active:after {
-  left: 0;
-  right: auto;
-  width: 100%;
 }

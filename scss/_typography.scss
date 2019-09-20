@@ -1,0 +1,43 @@
+a {
+  color: #000;
+
+  &.link {
+    text-decoration: underline;
+
+    :hover {
+      text-decoration: #F00 underline;
+    }
+  }
+
+  &:hover {
+    color: #000;
+    text-decoration: none;
+  }
+
+  &.subtitle_projects,
+  .social-links {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: #FF0000 underline;
+    }
+  }
+}
+
+.h0 {
+  font-size: 3.5rem;
+}
+
+.link-home {
+  text-decoration: none;
+
+  :hover {
+    text-decoration: underline;
+  }
+}
+
+.subtitle_projects {
+  font-family: 'Long Cang', cursive;
+  color: #FF0000;
+  margin-top: 1.5rem;
+}

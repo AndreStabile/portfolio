@@ -1,0 +1,14 @@
+img {
+  &.standard {
+    max-width: 50%;
+    max-height: 90vh;
+  }
+
+  &.fullProject {
+    width: 30vw;
+  }
+}
+
+.profile_pic {
+  width: 100%;
+}
